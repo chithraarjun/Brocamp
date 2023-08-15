@@ -1,0 +1,12 @@
+jQuery( document ).ready(function() {
+    // console.log( "ready!" );
+    
+    jQuery('.wpcf7-select').each(function(index, value) {
+
+          var name = jQuery(this).attr("name");
+          // console.log(name);
+
+          jQuery("select[name="+ name +"]").select2();
+
+        });
+});
